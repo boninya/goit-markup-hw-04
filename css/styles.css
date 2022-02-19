@@ -151,8 +151,19 @@ header {
   .section-hero {
     background: var(--dark-background);
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    
+    }
+
+    .view {
+      width: 1600px;
+      height: 600px;
+      margin: 0px auto;
+
+      background-image: url(../images/hero/view.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
     }
 
 .main-title {
@@ -183,6 +194,11 @@ header {
   background-color: var(--accent-color);
   cursor: pointer;
 }
+.hero-container {
+  padding-top: 200px;
+  margin-left: 280px;
+}
+
 /* ========= END HERO ========= */
 
 /* ========= START ADVANTAGES ========= */
@@ -311,6 +327,25 @@ letter-spacing: 0.03em;
 background: var(--dark-background);
 padding-top: 60px;
 padding-bottom: 60px;
+
+}
+.text-social {
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+.footer-box {
+  display: flex;
+}
+.footer-social {
+  margin-left: 70px;
+
+}
+.social-link {
+  display: flex;
 }
 /* ========= END FOOTER  ========= */
 /* ========= START PORTFOLIO ========= */
