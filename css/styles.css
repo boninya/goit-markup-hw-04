@@ -161,9 +161,8 @@ header {
       height: 600px;
       margin: 0px auto;
 
-      background-image: url(../images/hero/view.jpg);
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/view.jpg);
       background-size: cover;
-      background-repeat: no-repeat;
     }
 
 .main-title {
@@ -283,13 +282,30 @@ background:var(--light-background);
 
 /* ========= START CLIENTS ========= */
 
-.clients {
-font-weight: 700px;
-font-size: 36px;
-line-height: 1.17;
-text-align: center;
-letter-spacing: 0.03em;
-color: var(--dark-background);
+
+.list-clients {
+  display: flex;}
+
+.clients-list {
+margin-left: 30px;
+}
+.clients-list:not(:last-child) {
+  margin-right: 0px;
+}
+.clients-list-item {
+  display: flex;
+  justify-content: space-between;
+}
+.link-clients {
+display: flex;
+align-items: center;
+justify-content: center;
+color: var(--social-icon-color);
+border: 1px solid var(--social-icon-color);
+box-sizing: border-box;
+border-radius: 4px;
+width: 170px;
+height: 92px;
 }
 
 /* ========= START FOOTER ========= */
@@ -328,6 +344,7 @@ background: var(--dark-background);
 padding-top: 60px;
 padding-bottom: 60px;
 
+
 }
 .text-social {
 font-weight: 700;
@@ -338,7 +355,7 @@ text-transform: uppercase;
 color: #FFFFFF;
 }
 .footer-box {
-  display: flex;
+  /*display: flex;*/
 }
 .footer-social {
   margin-left: 70px;
