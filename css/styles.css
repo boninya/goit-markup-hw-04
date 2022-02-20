@@ -214,9 +214,30 @@ header {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
+.advantages-list::before {
+  content: "";
+  display: block;
+  width:270px;
+  height:120px;
+  background: #F5F4FA;
+  border-radius: 4px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+
+}
+
+.icon-advantages {
+  background-image: url();
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
 .advantages-list:not(:last-child) {
   margin-right: 30px;
 }
+
+
 .desc-advan {
   font-size: 14px;
   line-height: 1.71;
@@ -298,7 +319,7 @@ border-radius: 4px;
 margin-right: 30px;
 }
 .link-clients:not(:last-child) {
-  margin-right: 0px;
+  margin-right: 0;
 }
 
 .icon-clients {
