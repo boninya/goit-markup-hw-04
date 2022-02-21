@@ -46,6 +46,10 @@ header {
   padding-bottom: 25px;
 }
 
+.icon-header {
+  margin-right:10px;
+}
+
 .container {
   width: 1200px;
   margin-left: auto;
@@ -54,8 +58,6 @@ header {
   padding-right: 15px;
 }
 
- 
-  /*  outline: 2px;*/
 
   /* ========= START COMPONENTS ========= */
   .section {
@@ -132,14 +134,16 @@ header {
 .header-contact {
   margin-left: auto;
 }
-.contact-info {
+.info-mail{
   margin-right: 50px;
 }
+
 .mail:hover,
 .mail:focus,
 .tel:focus,
 .tel:hover {
   color: var(--accent-color);
+  fill:var(--accent-color);
 }
 
 /* ========= END HEADER ========= */
@@ -321,11 +325,12 @@ margin-right: 30px;
 .link-clients:not(:last-child) {
   margin-right: 0;
 }
-
+.link-clients:hover,
+.link-clients:focus {
+  border: 1px solid var(--accent-color);
+}
 .icon-clients {
 display: flex;
-width: 106px;
-height: 60px;
 fill:#AFB1B8;
 }
 .icon-clients:hover {
