@@ -122,9 +122,11 @@ header {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-color-text);
-  fill: #2F303A;
 }
-
+.icon-mailto,
+.icon-tel {
+  fill: currentColor;
+}
 .header-contact {
   margin-left: auto;
 }
@@ -378,10 +380,10 @@ letter-spacing: 0.03em;
 .contact {
   color: var(--primary-color-text);
 }
-.contact-list:hover,
+/*.contact-list:hover,
 .contact-list:focus {
   color:var(--accent-color);
-}
+}*/
 .address {
   font-style: normal;
 }
